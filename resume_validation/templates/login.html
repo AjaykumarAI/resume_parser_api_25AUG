@@ -1,0 +1,21 @@
+<html>
+<head>
+<title>Email</title>
+</head>
+<body>
+
+<div style="margin-left:40%; margin-top:20%;">
+  <form action = "http://74.208.253.155:5000/upload" method = "POST">
+<h1>Enter Email Address</h1>
+	<label for="emailtag">Email:<label>
+  	<input id="emailtag" style="margin-left:52px; text-align:center;" type = "email" placeholder = "Enter Email" id = "email" name="mail" required><br>
+{% if error %}
+         <p><strong></strong> {{ error }}
+      {% endif %}
+
+<br> <input style="margin-left:140px;" type = "submit" value = "submit">
+
+</form>
+</div>
+</body>
+</html>
